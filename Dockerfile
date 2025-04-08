@@ -1,5 +1,5 @@
 FROM pangeo/pangeo-notebook:302f739
-RUN pip install github-activity
+USER root
 RUN apt-get update && apt-get install -y \
     libnfs-utils \
     git \
@@ -10,3 +10,4 @@ RUN apt-get update && apt-get install -y \
     nfs-common \
     netcat-traditional \
     nmap
+USER jovyan
