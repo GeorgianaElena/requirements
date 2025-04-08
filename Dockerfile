@@ -5,5 +5,5 @@ RUN apt-get update && apt-get install -y \
     dnsutils \
     nfs-common \
     netcat-traditional \
-    nmap
-USER jovyan
+    nmap \
+    net-tools
